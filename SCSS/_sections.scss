@@ -33,6 +33,39 @@ $colorBorde :rgba(4, 216, 156, 1);
         justify-self: center;
     }
 }
+/*IMG BOARDS*/
+.img-boards{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	background-color: $fondo-caja; 
+	border-radius: 2.5rem;
+	border-style: solid;
+	border-color: $colorBorde; 
+    align-content: center;  
+    img{
+        width: 200px;
+        height: 450px;
+        @media (max-width: 900px) {
+            img{
+                 width: 5rem;
+                height: 16rem;
+                
+            }
+        }
+    }
+}
+.scale {
+    -webkit-transition: all 3s;
+    transition: all 3s;
+}
+.scale:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+
 /*GRILLA IFRAMES*/
 .grid-container {
     display: grid;
@@ -133,39 +166,9 @@ $colorBorde :rgba(4, 216, 156, 1);
    font-size: 4rem;
 }
 
-.img-boards{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	background-color: $fondo-caja; 
-	border-radius: 2.5rem;
-	border-style: solid;
-	border-color: $colorBorde; 
-    align-content: center;  
-    img{
-        width: 200px;
-        height: 450px;
-        @media (max-width: 900px) {
-            img{
-                 width: 5rem;
-                height: 16rem;
-                
-            }
-        }
-    }
-}
 
     
 
-.scale {
-    -webkit-transition: all 3s;
-    transition: all 3s;
-}
-.scale:hover {
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-}
 
 .cajita{
     display: flex;
