@@ -5,6 +5,29 @@ $colorBorde :rgba(4, 216, 156, 1);
     font-family: 'Bebas Neue', cursive;
     font-size: 3rem;
 }
+.cajaCentrada {
+    background-color: #9b9b9b;
+    border-color: $colorBorde; 
+    border-radius: 2.5rem;
+    border-style: solid;
+    width: 80rem;
+    padding: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+  
+@media (max-width: 768px) {
+  .cajaCentrada {
+    width: 100%;
+    margin: 0;
+    border-style: none;
+    width: 100%;
+    padding: 0;
+  }
+}
   
 /* seccion del video */
 .padre {
@@ -132,29 +155,7 @@ $colorBorde :rgba(4, 216, 156, 1);
     }
 }
   
-.cajaCentrada {
-    background-color: #9b9b9b;
-    border-color: $colorBorde; 
-    border-radius: 2.5rem;
-    border-style: solid;
-    width: 80rem;
-    padding: 8rem;
-    margin-left: auto;
-    margin-right: auto;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-  
-@media (max-width: 768px) {
-  .cajaCentrada {
-    width: 100%;
-    margin: 0;
-    border-style: none;
-    width: 100%;
-    padding: 0;
-  }
-}
+
  
 
 .gradient {
