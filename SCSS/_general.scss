@@ -1,0 +1,90 @@
+$fondo-cajas: color #2A3F3B; 
+$bordes-titulos: color #04D89C; 
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #002226;
+    h1 {
+      font-family: Notable;
+      color: #04D89C; 
+      text-align: center;
+      font-size: 5rem;
+  }
+  
+  h2 {
+      font-family: Notable;
+      font-style: italic;
+      color: #04D89C; 
+      font-size: 3rem;
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      -webkit-animation-delay: 2s;
+              animation-delay: 2s;
+      -webkit-animation-name: aparecer;
+              animation-name: aparecer;
+  }
+  
+  @-webkit-keyframes aparecer {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    @keyframes aparecer {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+  }
+  
+  
+  h3 {
+      font-family: Notable;
+      font-style: italic;
+      color: #04D89C; 
+    }
+  
+  @media (max-width: 768px) {
+      h1 {
+        font-size: 3rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+     
+  }
+  @media (max-width: 400px) {
+      h1 {
+        font-size: 2rem;
+      }
+  }
+  
+  a {
+      text-decoration: none;
+      font-family: 'Bebas Neue', cursive;
+  }
+    
+  ul {
+      list-style-type: none;
+      text-decoration: none;
+  }
+    
+  p {
+      font-size: 1.5rem;
+      font-family: 'Bebas Neue', cursive;
+      color: lightgrey;
+  }
+  
+  
+}
+

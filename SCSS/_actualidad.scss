@@ -1,0 +1,96 @@
+
+h3 {
+    font-family: Notable;
+    font-style: italic;
+    color: #04D89C; 
+    text-align: center;
+    font-size: 20px;
+
+}
+p {
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    color: lightgrey;
+    text-align: center;
+}
+
+.cajaGrid {
+  display: grid;
+  grid-template-columns: 50rem 50rem;
+  grid-template-rows: 40rem 40rem;
+  gap: 2rem 2rem;
+  grid-template-areas: "videoGrid textoGrid" "neoGrid tablaGrid";
+  border-style: solid;
+  border-color: #04d89c;
+  border-radius: 2.5rem;
+  background-image: radial-gradient(black, black, grey);
+	justify-content: center;
+
+}
+
+.videoGrid { 
+	grid-area: videoGrid;
+	background-color: #2a3f3b;
+  	border-radius: 2.5rem;
+  	overflow: hidden;
+   }
+.videoGrid iframe {
+	width: 496px;
+  	height:396px;
+  	border-radius: 2.5rem;
+}
+.textoGrid { 
+	grid-area: textoGrid;
+	background-color: #2a3f3b;
+  	border-radius: 2.5rem;
+  	padding: 5%;
+ }
+
+.neoGrid { 
+	grid-area: neoGrid;
+	background-color: #2a3f3b;
+  	border-radius: 2.5rem; 
+  }
+  .neoGrid img {
+  	width: 496px;
+  	height:396px;
+  	border-radius: 2.5rem;
+}
+
+.tablaGrid { 
+	grid-area: tablaGrid;
+	background-color: #2a3f3b;
+  	border-radius: 2.5rem; 
+  }
+	.tablaGrid img{
+		width: 496px;
+  		height:396px;
+  		border-radius: 2.5rem;
+	}
+@media (max-width: 667px) {
+	.cajaGrid {
+	  display: grid;
+	  grid-template-columns: 200px 200px;
+	  grid-template-rows: 300px 300px;
+	  gap: 2px 2px;
+	  grid-template-areas: 
+	  "videoGrid videoGrid" 
+	  "textoGrid textoGrid"
+	   "neoGrid neoGrid"
+	   "tablaGrid tablaGrid";
+	  justify-content: center;
+	}
+	.neoGrid img {
+	  width: 396px;
+	  height: 330px;
+  	
+  }
+	.tablaGrid img{
+		width: 396px;
+		height: 330px;
+  			
+	}
+
+
+  
+}
