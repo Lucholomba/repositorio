@@ -70,8 +70,8 @@ p {
 @media (max-width: 667px) {
 	.cajaGrid {
 	  display: grid;
-	  grid-template-columns: 200px 200px;
-	  grid-template-rows: 300px 300px;
+	  grid-template-columns: 17rem 17rem ;
+	  grid-template-rows: 25rem 25rem;
 	  gap: 2px 2px;
 	  grid-template-areas: 
 	  "videoGrid videoGrid" 
@@ -81,13 +81,13 @@ p {
 	  justify-content: center;
 	}
 	.neoGrid img {
-	  width: 396px;
-	  height: 330px;
+	  width: 34rem;
+	  height: 30rem;
   	
   }
 	.tablaGrid img{
-		width: 396px;
-		height: 330px;
+		width: 34rem;
+		height: 30rem;
   			
 	}
 

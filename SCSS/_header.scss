@@ -2,18 +2,31 @@
 .baner {
     width: 100%;
     height: 80rem;
-   
+
     .baner__img {
         width: 100%;
+        height: 80rem;
+    }
+}
+@media (max-width: 667px) {
+    .baner {
         height: auto;
+        width: 100%;
+        .baner__img {
+            height: 25rem;
+        }
     }
 }
 
-.text-nav{
+.text-nav {
     font-size: 3rem;
 }
 
 .header__logo {
     margin-top: 8rem;
     width: 100%;
+    img{
+        width: 100%;
+        height: auto;
+    }
 }
