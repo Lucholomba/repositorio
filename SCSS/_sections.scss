@@ -128,35 +128,38 @@ $colorBorde: rgba(4, 216, 156, 1);
     background-image: radial-gradient(black, black, grey);
     justify-content: space-evenly;
     align-items: center;
-}
-
-.area1 {
-    grid-area: area1;
-  
-    border-radius: 2.5rem;
-    overflow: hidden;
-    justify-items: center;
-}
-.area1 iframe {
-    width: 35rem;
-    height: 25rem;
-    border-radius: 2.5rem;
-    margin: auto;
-}
-
-.area2 {
-    grid-area: area2;
+    .area1 {
+        grid-area: area1;
+      
+        border-radius: 2.5rem;
+        overflow: hidden;
+        justify-items: center;
+        iframe {
+            width: 35rem;
+            height: 25rem;
+            border-radius: 2.5rem;
+            margin: auto;
+        }
+    }
     
-    border-radius: 2.5rem;
-    overflow: hidden;
-    justify-items: center;
+    
+    .area2 {
+        grid-area: area2;
+        
+        border-radius: 2.5rem;
+        overflow: hidden;
+        justify-items: center;
+        iframe {
+            width: 35rem;
+            height: 25rem;
+            border-radius: 2.5rem;
+            margin: auto;
+        }
+    }
 }
-.area2 iframe {
-    width: 35rem;
-    height: 25rem;
-    border-radius: 2.5rem;
-    margin: auto;
-}
+
+
+
 @media (max-width: 667px) {
     .grid-container {
         display: grid;
@@ -167,10 +170,11 @@ $colorBorde: rgba(4, 216, 156, 1);
             "area1 area1"
             "area2 area2";
         justify-content: center;
+        justify-items: center;
         .area1,
         .area2 {
             width: 80%;
-            align-content: center;
+            align-self: center;
         }
     }
     /*FIN*/
