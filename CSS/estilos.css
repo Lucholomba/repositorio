@@ -23,6 +23,9 @@ body {
     animation-delay: 2s;
     -webkit-animation-name: aparecer;
     animation-name: aparecer; }
+  body header {
+    margin: 0px;
+    padding: 0px; }
 
 @-webkit-keyframes aparecer {
   0% {
@@ -64,6 +67,9 @@ body {
   .baner .baner__img {
     width: 100%;
     height: 80rem; }
+  .baner .carousel {
+    margin: 0px;
+    padding: 0px; }
 
 @media (max-width: 667px) {
   .baner {
@@ -98,8 +104,8 @@ p {
 .cajaGrid {
   display: grid;
   grid-template-columns: 50rem 50rem;
-  grid-template-rows: 40rem 40rem;
-  gap: 2rem 2rem;
+  grid-template-rows: 35rem 35rem;
+  gap: 10rem 10rem;
   grid-template-areas: "videoGrid textoGrid" "neoGrid tablaGrid";
   border-style: solid;
   border-color: #04d89c;
@@ -114,15 +120,16 @@ p {
   overflow: hidden; }
 
 .videoGrid iframe {
-  width: 496px;
-  height: 396px;
+  width: 50rem;
+  height: 35rem;
   border-radius: 2.5rem; }
 
 .textoGrid {
   grid-area: textoGrid;
   background-color: #2a3f3b;
   border-radius: 2.5rem;
-  padding: 5%; }
+  padding: 5%;
+  box-sizing: border-box; }
 
 .neoGrid {
   grid-area: neoGrid;
@@ -130,8 +137,8 @@ p {
   border-radius: 2.5rem; }
 
 .neoGrid img {
-  width: 496px;
-  height: 396px;
+  width: 50rem;
+  height: 35rem;
   border-radius: 2.5rem; }
 
 .tablaGrid {
@@ -140,8 +147,8 @@ p {
   border-radius: 2.5rem; }
 
 .tablaGrid img {
-  width: 496px;
-  height: 396px;
+  width: 50rem;
+  height: 35rem;
   border-radius: 2.5rem; }
 
 @media (max-width: 667px) {
@@ -154,10 +161,14 @@ p {
     justify-content: center; }
   .neoGrid img {
     width: 34rem;
-    height: 30rem; }
+    height: 25rem; }
   .tablaGrid img {
     width: 34rem;
-    height: 30rem; } }
+    height: 25rem; }
+  .videoGrid iframe {
+    width: 34rem;
+    height: 25rem;
+    border-radius: 2.5rem; } }
 
 .formu {
   font-family: "Bebas Neue", cursive;

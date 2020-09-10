@@ -4,7 +4,6 @@ $bordes-titulos: color #04d89c;
 html {
   font-size: 62.5%;
 }
-
 body {
   justify-content: center;
   margin: 0px;
@@ -29,6 +28,10 @@ body {
     animation-delay: 2s;
     -webkit-animation-name: aparecer;
     animation-name: aparecer;
+  }
+  header{
+    margin: 0px;
+    padding: 0px;
   }
 
   @-webkit-keyframes aparecer {
