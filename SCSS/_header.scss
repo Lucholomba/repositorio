@@ -1,5 +1,4 @@
 
-
 .baner {
     
     width: 100%;
@@ -27,12 +26,17 @@
 .text-nav {
     font-size: 3rem;
 }
-
-.header__logo {
-    margin-top: 8rem;
+header{
+    margin:0px;
+    padding: 0px;
     width: 100%;
-    img{
+    
+    .header__logo {
+        margin-top: 8rem;
         width: 100%;
-        height: auto;
+        img{
+            width: 100%;
+            height: auto;
+        }
     }
 }
